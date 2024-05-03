@@ -1,0 +1,5 @@
+Praca domowa1:
+Stwórz klasę Product, która będzie miała pola nazwa, gramatura, producent, cena, okres przydatności liczony w miesiącach,
+kraj pochodzenia, stawkę VAT na dany produkt. Produkty powinny być porównywane w kolejności: nazwa, producent, gramatura,
+ okres przydatności, kraj pochodzenia, cena i stawka VAT. Nazwy niech będą alfabetycznie, okres przydatności od najkrótszego
+ do najdłuższego, cena od najtańszego do najdroższego, stawka vat od najniższej do najwyższej.

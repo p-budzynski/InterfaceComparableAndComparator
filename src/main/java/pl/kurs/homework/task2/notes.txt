@@ -1,0 +1,10 @@
+Praca domowa2:
+Stwórz złożoną agregację:
+Klasa Computer – będzie przechowywała następujące pola obiektowe:
+Płyta główna – muszą być informację o sockecie, producencie, modelu itp.
+Procesor – producent, model, taktowanie, ilość rdzeni, jaki proces technologiczny (wyrażony w nanometrach);
+Dysk twardy – rodzaj (HDD/SSD), pojemność, producent, model
+Pamięć RAM – wielkość w GB, częstotliwość w MHz, jaki DDR, producent i model
+Karta graficzna – wielkość szyny w Mbit, ilość pamięci VRAM, model, producent
+Do tego stwórz odpowiednie komparatory dla komputera: MotherBoardComparator, ProcessorComparator, HardDriveComparator, RamComparator
+ oraz GraphicCardComparator. Kolejność elementów po których ma sortować dany komparator – wg. Twojego uznania :)
