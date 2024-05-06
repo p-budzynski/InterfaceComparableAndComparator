@@ -1,24 +1,27 @@
 package pl.kurs.homework.task2.comparator;
 
 import pl.kurs.homework.task2.model.Computer;
+import pl.kurs.homework.task2.model.RandomAccessMemory;
 
 import java.util.Comparator;
 
 public class RamComparator implements Comparator<Computer> {
     @Override
     public int compare(Computer o1, Computer o2) {
-        int result = Integer.compare(o2.getRam().getSizeGB(), o1.getRam().getSizeGB());
+        RandomAccessMemory ram1 = o1.getRam();
+        RandomAccessMemory ram2 = o2.getRam();
+        int result = Integer.compare(ram2.getSizeGB(), ram1.getSizeGB());
         if (result == 0) {
-            result = Integer.compare(o2.getRam().getFrequencyMHz(), o1.getRam().getFrequencyMHz());
+            result = Integer.compare(ram2.getFrequencyMHz(), ram1.getFrequencyMHz());
         }
         if (result == 0) {
-            result = Character.compare(o2.getRam().getDdrType(), o1.getRam().getDdrType());
+            result = Character.compare(ram2.getDdrType(), ram1.getDdrType());
         }
         if (result == 0) {
-            result = o1.getRam().getProducer().compareTo(o2.getRam().getProducer());
+            result = ram1.getProducer().compareTo(ram2.getProducer());
         }
         if (result == 0) {
-            result = o2.getRam().getModel().compareTo(o1.getRam().getModel());
+            result = ram2.getModel().compareTo(ram1.getModel());
         }
         return result;
     }
